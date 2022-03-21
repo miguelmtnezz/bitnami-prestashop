@@ -59,8 +59,7 @@ services:
       - 80:80
       - 443:443
     environment:
-      #DOMAINS: 'localhost -> http://prestashop:80 #local'
-      DOMAINS: 'practica16iaw.ddns.net -> http://prestashop:8080 #production'
+      DOMAINS: 'ps-docker.ddns.net -> http://prestashop:8080 #production'
     volumes:
       - ssl_certs_data:/var/lib/https-portal
     depends_on:
